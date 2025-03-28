@@ -1,0 +1,445 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 950px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 625px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+        font-size: 36px;
+    }
+
+    .program span, .dresscode span, .wishes span, .organizer span, .location span, .presence span {
+        font-size: 46px;
+    }
+    .invite-name {
+        font-size: 98px;
+        max-width: 520px;
+        text-align: center;
+        line-height: 0.7;
+
+    }
+
+    .photo-one {
+        position: absolute;
+        top: -113px;
+        left: -100px;
+    }
+    .photo-one .polaroid{
+        width: 450px;
+    }
+    .foto img {
+        width: 306px;
+
+    }
+
+    .photo-two {
+        top: -43%;
+        width: 250px;
+        grid-auto-rows: 160px; /* Высота каждой строки 200px */
+    }
+
+    .photo-two img {
+        max-width: 400px; /* Ограничение ширины */
+    }
+
+    .dear {
+        font-size: 36px;
+    }
+
+
+
+
+    .save {
+        font-size: 28px;
+    }
+
+
+
+
+    .dresscode-info-block {
+        width: 60px;
+        height: 60px;
+        border: 1px solid white;
+    }
+
+
+    .organizer-text {
+        font-size: 28px;
+    }
+
+    .organizer-name, .organizer-phone {
+        font-size: 28px;
+    }
+
+    .organizer a {
+        font-size: 28px;
+    }
+
+
+
+    .wedding-form {
+        font-size: 28px;
+    }
+    .timout-title {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 479px) {
+    .dresscode .container, .wishes .container {
+        max-width: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        max-width: 380px;
+    }
+
+
+    .program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+        font-size: 40px;
+    }
+
+    .program span, .dresscode span, .wishes span, .organizer span, .location span, .presence span {
+        font-size: 36px;
+    }
+    .program, .organizer, .dresscode, .wishes, .presence {
+        padding: 50px 0 50px 0;
+    }
+    .invite-name {
+        font-size: 71px;
+        max-width: 380px;
+
+    }
+
+    .invite .container {
+        padding: 100px 0 100px 0;
+    }
+    .photo-one {
+        top: -62px;
+        left: -103px;
+    }
+    .photo-one .polaroid{
+        width: 360px;
+    }
+    .foto img {
+        width: 247px;
+
+    }
+
+    .photo-two {
+        top: -26%;
+        width: 160px;
+        grid-auto-rows: 100px; /* Высота каждой строки 200px */
+    }
+
+    .photo-two img {
+        max-width: 400px; /* Ограничение ширины */
+    }
+    .photo-line {
+        height: 200px;
+    }
+
+    .photo-one span {
+        top: 77%;
+        left: 40%;
+    }
+
+
+
+    .no-fonts {
+        font-size: 20px;
+    }
+
+    .save {
+        font-size: 20px;
+    }
+
+    .timeline {
+        max-width: 380px;
+    }
+
+    .dresscode-info-text {
+        font-size: 20px;
+    }
+
+    .dresscode-info-block {
+        width: 80px;
+        height: 60px;
+    }
+
+    .wishes-text {
+        font-size: 20px;
+    }
+
+    .organizer-text {
+        font-size: 20px;
+    }
+
+    .organizer-name, .organizer-phone {
+        font-size: 20px;
+    }
+
+    .organizer a {
+        font-size: 20px;
+    }
+    .location-info p{
+        font-size: 20px;
+    }
+    .location-address a {
+        font-size: 20px;
+    }
+
+    .presence-text {
+        font-size: 20px;
+    }
+    .wedding-form {
+        font-size: 20px;
+    }
+    .timout-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 407px) {
+    .dresscode-info-block {
+        width: 50px;
+        height: 50px;
+    }
+    .dresscode .container, .wishes .container {
+        max-width: 380px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        max-width: 300px;
+    }
+
+
+    .program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+        font-size: 30px;
+    }
+
+    .program span, .dresscode span, .wishes span, .organizer span, .location span, .presence span {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    .program, .organizer, .dresscode, .wishes, .presence {
+        padding: 50px 0 50px 0;
+    }
+    .invite-name {
+        font-size: 71px;
+        max-width: 380px;
+
+    }
+    .program span {
+        margin-bottom: 0;
+    }
+
+    .invite .container {
+        padding: 100px 0 100px 0;
+    }
+    .photo-one {
+        top: -62px;
+        left: -103px;
+    }
+    .photo-one .polaroid{
+        width: 360px;
+    }
+    .foto img {
+        width: 247px;
+
+    }
+
+    .photo-two {
+        top: -26%;
+        width: 160px;
+        grid-auto-rows: 100px; /* Высота каждой строки 200px */
+    }
+
+    .photo-two img {
+        max-width: 400px; /* Ограничение ширины */
+    }
+    .photo-line {
+        height: 200px;
+    }
+
+    .photo-one span {
+        top: 77%;
+        left: 40%;
+    }
+
+    .dear {
+        font-size: 28px;
+    }
+
+
+    .timeline {
+        max-width: 300px;
+    }
+
+    .event {
+        grid-template-columns: 100px 1fr;
+        align-items: center;
+        grid-template-rows: 144px;
+    }
+    .time-info .description {
+        font-size: 20px;
+    }
+    .time-info .text {
+        font-size: 12px;
+    }
+
+    .dresscode-info-text {
+        font-size: 20px;
+    }
+
+
+
+
+    .location-address a {
+        font-size: 20px;
+    }
+
+    .presence-text {
+        font-size: 20px;
+    }
+    .wedding-form {
+        font-size: 20px;
+    }
+
+    .timout-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 280px;
+    }
+
+    .program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+        margin-bottom: 15px;
+    }
+
+    .program span, .dresscode span, .wishes span, .organizer span, .location span, .presence span {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .program, .organizer, .location, .dresscode, .wishes, .presence {
+        padding: 50px 0 50px 0;
+    }
+    .invite-name {
+        font-size: 57px;
+        max-width: 280px;
+
+    }
+    .program span {
+        margin-bottom: 0;
+    }
+
+    .invite .container {
+        padding: 100px 0 100px 0;
+    }
+    .photo-one {
+        top: -42px;
+        left: -87px;
+    }
+    .photo-one .polaroid{
+        width: 280px;
+    }
+    .foto img {
+        width: 190px;
+
+    }
+
+    .photo-two {
+        top: -19%;
+        width: 125px;
+        grid-auto-rows: 86px;
+    }
+
+    .photo-two img {
+        max-width: 400px; /* Ограничение ширины */
+    }
+    .photo-line {
+        height: 200px;
+    }
+
+    .photo-one span {
+        top: 77%;
+        left: 45%;
+        font-size: 20px;
+    }
+    .main {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .dear {
+        font-size: 30px;
+    }
+
+
+    .timeline {
+        max-width: 300px;
+    }
+
+    .event {
+        grid-template-columns: 100px 1fr;
+        align-items: center;
+        grid-template-rows: 144px;
+    }
+    .time-info .description {
+        font-size: 20px;
+    }
+    .time-info .text {
+        font-size: 12px;
+    }
+
+    .dresscode-info-text {
+        font-size: 20px;
+    }
+
+    .dresscode-info-block {
+        width: 80px;
+        height: 60px;
+    }
+
+
+
+    .location-address a {
+        font-size: 20px;
+    }
+
+    .presence-text {
+        font-size: 20px;
+    }
+    .wedding-form {
+        font-size: 20px;
+    }
+
+    .wedding-form {
+        button {
+            width: 104%;
+        }
+    }
+    .timout {
+        padding: 20px 0 20px 0;
+    }
+    .timout-title {
+        font-size: 23px;
+    }
+}

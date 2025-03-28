@@ -1,0 +1,569 @@
+@font-face {
+    font-family: "Gogol";
+    src: url("fonts/ofont.ru_Gogol.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Felidae";
+    src: url("fonts/Felidae.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Quant Antiqua";
+    src: url("fonts/ofont.ru_Quant Antiqua.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Stolzl";
+    src: url("fonts/ofont.ru_Stolzl.ttf") format("truetype");
+}
+@font-face {
+    font-family: "French";
+    src: url("./fonts/FrenchKissscript.ttf");
+}
+@font-face {
+    font-family: "snellroundhand";
+    src: url("./fonts/snellroundhand_bold.otf");
+
+}
+
+@font-face {
+    font-family: "NotoSerifDisplayRegular";
+    src: url("./fonts/NotoSerifDisplay-Regular.ttf");
+
+}
+@font-face {
+    font-family: "NotoSerifDisplayLight";
+    src: url("./fonts/NotoSerifDisplay-Light.ttf");
+
+}
+@font-face {
+    font-family: "NotoSerifDisplayExtraLight";
+    src: url("./fonts/NotoSerifDisplay-ExtraLight.ttf");
+
+}
+@font-face {
+    font-family: "NotoSerifDisplay";
+    src: url("./fonts/NotoSerifDisplay-VariableFont_wdth,wght.ttf");
+
+}
+@font-face {
+    font-family: "Snell Roundhand Reg";
+    src: url("./fonts/ofont.ru_Snell Roundhand.ttf");
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial,sans-serif;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content {
+    opacity: 0;  /* Скрываем весь контент по умолчанию */
+    transition: opacity 1s ease-in-out;  /* Плавное появление */
+}
+.content.visible {
+    opacity: 1;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f8f7f6;
+    justify-content: center;
+    font-size: 50px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+    z-index: 1000;
+}
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px); /* Исходное положение ниже */
+    animation: letterFadeIn 1s forwards;
+}
+@keyframes letterFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Начинаем ниже */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* В конечном положении */
+    }
+}
+.letter img {
+    width: 300px;
+}
+.letter-text {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+.letter-text span {
+    color: #750000;
+}
+.second-loader {
+    display: none; /* Прячем второй лоадер */
+}
+.invite {
+    background-color: #f8f7f6;
+
+}
+#video-container {
+    width: 95%;
+    height: 715px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.preloader-text {
+
+    color: white;
+}
+.preloader-wed-day {
+    font-size: 30px;
+    font-family: "Felidae", sans-serif;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    text-align: center;
+}
+.preloader-name {
+    font-size: 80px;
+    font-family: "snellroundhand", sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: left;
+    line-height: 90%;
+
+}
+.bukva {
+    font-family: "Snell Roundhand Reg", sans-serif;
+    font-size: 50px;
+    font-weight: normal !important;
+}
+.program-title, .dear, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #303c2e;
+    text-transform: uppercase;
+    font-family: "NotoSerifDisplayLight", sans-serif;
+
+}
+.dresscode-title {
+    color: white;
+}
+
+
+.program, .organizer, .wishes, .presence, .timout, .niz{
+    background-color: #f8f7f6;
+    padding: 50px 0;
+}
+.program {
+    padding-bottom: 20px;
+}
+.niz {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.niz-text-one {
+    font-size: 20px;
+    color: #303c2e;
+    text-align: center;
+}
+.niz-text-two {
+    font-size: 40px;
+    color: #303c2e;
+    text-align: center;
+    font-family: "snellroundhand", sans-serif;
+    margin-top: 20px;
+}
+.location, .dresscode {
+    background-color: #303c2e;
+    color: white;
+    padding: 30px 0;
+
+}
+.location .date {
+    text-align: center;
+    font-family: 'Inter',Arial,sans-serif;
+    font-size: 40px;
+}
+
+
+.invite-title {
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background:#fcfbf5;
+    color: #3d493b;
+    padding: 25px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.invite-title-content {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.invite-title-content span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.invite .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 165px 0;
+
+}
+
+.invite-name {
+    font-size: 120px;
+    max-width: 528px;
+    text-align: center;
+    line-height: 0.8;
+
+}
+
+
+
+
+.main {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.dear {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.no-fonts {
+    font-family: 'Inter',Arial,sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.main-info span {
+    font-weight: bold;
+}
+
+.save {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.photo-table {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+.photo-table img {
+    object-position: 0 77%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.photo-table2 {
+    height: 100%;
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+}
+.photo-table2 img {
+    object-position: 0 77%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.photo-table3 {
+    height: 300px;
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+}
+.photo-table3 img {
+    object-position: 0 7%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin: auto;
+    color: #303c2e;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: start;
+    padding: 30px 0;
+    border-bottom: 1px solid #303c2e;
+
+}
+.event:last-child {
+    border-bottom: none;
+}
+.event a {
+    text-decoration: none;
+    color: #303c2e;
+}
+.icon {
+    font-size: 30px;
+}
+
+.time-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.description {
+    font-size: 22px;
+}
+
+.time-info .text {
+    font-size: 16px;
+}
+
+.icon.first img {
+    width: 160px;
+}
+
+.icon.second img, .icon.three img, .icon.four img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+.dresscode-info-text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f8efea;
+}
+
+.dresscode-info-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dresscode-info-block {
+    width: 100px;
+    height: 100px;
+}
+
+.dresscode-info-block.first {
+    background-color: #859b62;
+}
+
+.dresscode-info-block.second {
+    background-color: #c0c489;
+}
+
+.dresscode-info-block.third {
+    background-color: #dee9e3;
+}
+
+.dresscode-info-block.four {
+    background-color: #e7c3ab;
+}
+.dresscode-info-block.five {
+    background-color: #8f6442;
+}
+
+.wishes-text {
+    text-align: center;
+    font-size: 20px;
+    color: #303c2e;
+}
+
+.location-info p{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.location-address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.location-address p {
+    text-align: center;
+}
+.location-address a {
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.location-address a:hover {
+    color: #262626;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.presence-text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.des {
+    font-size: 18px;
+}
+
+.wedding-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Inter',Arial,sans-serif;
+
+    fieldset {
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: block;
+        margin: 5px 0;
+    }
+
+    input[type="text"] {
+        width: 97%;
+        padding: 8px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #5c5c5c;
+
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #303c2e;
+        color: #f8efea;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background: #262626;
+        }
+    }
+}
+
+.timout {
+    padding: 50px 0 50px 0;
+}
+.timout-title {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+body .time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #303c2e;
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+.time-box span {
+    font-size: 32px;
+    line-height: 1;
+    font-family: "NotoSerifDisplayLight", sans-serif !important;
+}
+
+.time-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+
